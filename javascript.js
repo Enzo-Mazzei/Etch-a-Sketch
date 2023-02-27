@@ -176,11 +176,7 @@ function setButtonsClicks(button) {
 clear.addEventListener("click", () => {
   setButtonsClicks(clear)
   squareDivsArray.forEach((squareDiv) => {
-    squareDiv.style.filter = ""
     squareDiv.style.backgroundColor = "white"
-    if (squareDiv.hasAttribute('data-shading-count')) {
-      squareDiv.dataset.shadingCount = 0;
-    }
   });
 });
 
